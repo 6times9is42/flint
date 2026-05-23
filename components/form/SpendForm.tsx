@@ -284,8 +284,6 @@ export function SpendForm() {
               What does your team mainly use AI for?
             </p>
             <div
-              role="radiogroup"
-              aria-label="Primary use case"
               aria-describedby={errors.useCase ? 'use-case-error' : undefined}
               className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5"
             >
