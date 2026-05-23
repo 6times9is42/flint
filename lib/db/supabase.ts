@@ -5,7 +5,9 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
 
 // Browser client — anon key, read-only access to audits
-export const supabaseBrowser = createClient(supabaseUrl, supabaseAnonKey);
+export function supabaseBrowser() {
+  return createClient(supabaseUrl, supabaseAnonKey);
+}
 
 // Server client — service role, bypasses RLS for writes
 export function supabaseServer() {
