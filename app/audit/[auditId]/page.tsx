@@ -11,6 +11,7 @@
  */
 
 import { notFound } from 'next/navigation';
+import { cache } from 'react';
 import type { Metadata } from 'next';
 import { supabaseServer } from '@/lib/db/supabase';
 import { AuditResults } from '@/components/results/AuditResults';
@@ -25,7 +26,7 @@ interface PageProps {
 
 // ─── Data fetching ────────────────────────────────────────────────────────────
 
-async function getAuditBySlug(slug: string): Promise<AuditResult | null> {
+const getAuditBySlug = cache(async (slug: string): Promise<AuditResult | null> => {
   const supabase = supabaseServer();
   const { data, error } = await supabase
     .from('audits')
@@ -35,7 +36,7 @@ async function getAuditBySlug(slug: string): Promise<AuditResult | null> {
 
   if (error || !data) return null;
   return data.audit_result as AuditResult;
-}
+});
 
 // ─── Metadata (OG tags) ───────────────────────────────────────────────────────
 

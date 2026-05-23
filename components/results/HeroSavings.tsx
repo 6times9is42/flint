@@ -126,10 +126,10 @@ export function HeroSavings({
         <div className="pt-4">
           <p
             className="inline-flex items-baseline gap-1.5 rounded-lg border border-[#f97316]/25 bg-[#f97316]/10 px-4 py-2"
-            aria-label={`${formatAnnual(totalMonthlySavings)} per year in potential savings`}
+            aria-label={`${formatCurrency(totalAnnualSavings)} per year in potential savings`}
           >
             <span className="font-mono text-2xl font-bold text-[#f97316] sm:text-3xl">
-              {formatAnnual(totalMonthlySavings)}
+              {formatCurrency(totalAnnualSavings)}
             </span>
             <span className="text-sm font-medium text-neutral-500">/ year</span>
           </p>
