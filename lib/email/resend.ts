@@ -9,18 +9,20 @@ export async function sendAuditConfirmation({
   to,
   auditSlug,
   totalMonthlySavings,
+  isOptimal,
 }: {
   to: string;
   auditSlug: string;
   totalMonthlySavings: number;
+  isOptimal: boolean;
 }) {
   return resend.emails.send({
     from: FROM,
     to,
     subject:
-      totalMonthlySavings < 10
+      isOptimal
         ? 'Your Flint AI spend audit — stack looks healthy'
         : `Your Flint audit: $${totalMonthlySavings}/mo in savings found`,
-    react: AuditConfirmation({ auditSlug, totalMonthlySavings, baseUrl: BASE_URL }),
+    react: AuditConfirmation({ auditSlug, totalMonthlySavings, isOptimal, baseUrl: BASE_URL }),
   });
 }

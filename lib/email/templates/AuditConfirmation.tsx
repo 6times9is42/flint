@@ -14,16 +14,17 @@ import {
 interface AuditConfirmationProps {
   auditSlug: string;
   totalMonthlySavings: number;
+  isOptimal: boolean;
   baseUrl?: string;
 }
 
 export function AuditConfirmation({
   auditSlug,
   totalMonthlySavings,
+  isOptimal,
   baseUrl = 'https://tryflint.app',
 }: AuditConfirmationProps) {
   const auditUrl = `${baseUrl}/audit/${auditSlug}`;
-  const isOptimal = totalMonthlySavings < 10;
 
   return (
     <Html>

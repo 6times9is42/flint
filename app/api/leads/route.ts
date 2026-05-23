@@ -51,8 +51,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Audit not found' }, { status: 404 });
   }
 
-  // Check for duplicate lead (same email for this audit from this IP)
-  // This prevents the same person from submitting multiple times
+  // Check for duplicate lead (same email + auditId)
+  // Email-based dedup is more robust than IP-based; prevents the same person from submitting multiple times
   const { data: existing } = await db
     .from('leads')
     .select('id')
@@ -90,6 +90,7 @@ export async function POST(req: NextRequest) {
     to: email,
     auditSlug: auditId,
     totalMonthlySavings: auditResult.totalMonthlySavings,
+    isOptimal: auditResult.totalMonthlySavings < 10,
   }).catch((err) => {
     console.error('Email send failed:', err);
   });
