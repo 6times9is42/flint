@@ -11,7 +11,7 @@
  * impact. The number IS the message — no decoration needed beyond contrast.
  */
 
-import { formatCurrency, formatAnnual } from '@/lib/utils';
+import { formatCurrency } from '@/lib/utils';
 
 interface HeroSavingsProps {
   totalMonthlySavings: number;

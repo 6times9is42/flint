@@ -131,7 +131,7 @@ export function LeadCaptureModal({ auditId }: LeadCaptureModalProps) {
         <DialogHeader>
           <DialogTitle className="text-white">Get a copy of this audit</DialogTitle>
           <DialogDescription className="text-neutral-400">
-            We'll send you a copy. No spam — you can close this.
+            We&apos;ll send you a copy. No spam — you can close this.
           </DialogDescription>
         </DialogHeader>
 

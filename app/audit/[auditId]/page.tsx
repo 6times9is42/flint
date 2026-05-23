@@ -13,6 +13,7 @@
 import { notFound } from 'next/navigation';
 import { cache } from 'react';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { supabaseServer } from '@/lib/db/supabase';
 import { AuditResults } from '@/components/results/AuditResults';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
@@ -134,7 +135,7 @@ export default async function AuditPage({ params }: PageProps) {
       <div className="relative mx-auto max-w-2xl px-6 pb-24 pt-12 sm:pt-16">
         {/* ── Brand mark ──────────────────────────────────────────────────── */}
         <header className="mb-10">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316] focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 rounded"
             aria-label="Flint — go to home page"
@@ -164,7 +165,7 @@ export default async function AuditPage({ params }: PageProps) {
             <span className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[#f97316]">
               Flint
             </span>
-          </a>
+          </Link>
 
           <p className="mt-4 font-mono text-xs uppercase tracking-[0.2em] text-neutral-600">
             AI Spend Audit
@@ -183,12 +184,12 @@ export default async function AuditPage({ params }: PageProps) {
               Pricing data verified from official vendor pages.{' '}
               <span className="text-neutral-600">Built to help, not to sell.</span>
             </p>
-            <a
+            <Link
               href="/"
               className="text-xs text-neutral-600 underline underline-offset-4 transition-colors hover:text-[#f97316] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316] focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 rounded"
             >
               Run your own audit →
-            </a>
+            </Link>
           </div>
         </footer>
       </div>
