@@ -21,7 +21,7 @@ interface SavingsCTAProps {
 export function SavingsCTA({ totalMonthlySavings }: SavingsCTAProps) {
   return (
     <section
-      className="relative overflow-hidden rounded-xl border border-[#f97316]/30 bg-[#f97316]/[0.04] p-5"
+      className="relative overflow-hidden rounded-xl border border-[#be64ff]/30 bg-[#be64ff]/[0.04] p-5"
       aria-labelledby="savings-cta-heading"
     >
       {/* Subtle top-left corner glow */}
@@ -30,14 +30,14 @@ export function SavingsCTA({ totalMonthlySavings }: SavingsCTAProps) {
         aria-hidden="true"
         style={{
           background:
-            'radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%)',
+            'radial-gradient(circle, rgba(190,100,255,0.12) 0%, transparent 70%)',
         }}
       />
 
       <div className="relative flex gap-4">
         {/* Icon mark */}
         <div
-          className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-[#f97316]/30 bg-[#f97316]/10"
+          className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-[#be64ff]/30 bg-[#be64ff]/10"
           aria-hidden="true"
         >
           <svg
@@ -45,7 +45,7 @@ export function SavingsCTA({ totalMonthlySavings }: SavingsCTAProps) {
             height="14"
             viewBox="0 0 14 14"
             fill="none"
-            stroke="#f97316"
+            stroke="#be64ff"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"

@@ -24,7 +24,7 @@ export default function HomePage() {
           width: '600px',
           height: '400px',
           background:
-            'radial-gradient(ellipse at 50% 0%, rgba(249,115,22,0.08) 0%, transparent 70%)',
+            'radial-gradient(ellipse at 50% 0%, rgba(190,100,255,0.08) 0%, transparent 70%)',
         }}
       />
 
@@ -44,17 +44,17 @@ export default function HomePage() {
               <polygon
                 points="14,2 26,14 14,26 2,14"
                 fill="none"
-                stroke="#f97316"
+                stroke="#be64ff"
                 strokeWidth="2"
                 strokeLinejoin="round"
               />
               <polygon
                 points="14,7 21,14 14,21 7,14"
-                fill="#f97316"
+                fill="#be64ff"
                 opacity="0.7"
               />
             </svg>
-            <span className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[#f97316]">
+            <span className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[#be64ff]">
               Flint
             </span>
           </div>
@@ -67,7 +67,7 @@ export default function HomePage() {
                 className="relative inline-block"
                 style={{
                   // Subtle underline using the amber
-                  backgroundImage: 'linear-gradient(#f97316, #f97316)',
+                  backgroundImage: 'linear-gradient(#be64ff, #be64ff)',
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: '0 100%',
                   backgroundSize: '100% 2px',

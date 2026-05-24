@@ -27,7 +27,7 @@ const TOOL_CATEGORY_LABELS: Record<string, string> = {
 const CATEGORY_COLORS: Record<string, string> = {
   'coding-assistant': 'bg-sky-400',
   'general-llm': 'bg-emerald-400',
-  api: 'bg-orange-400',
+  api: 'bg-[#be64ff]',
 };
 
 // ─── Types ───────────────────────────────────────────────────────────────────

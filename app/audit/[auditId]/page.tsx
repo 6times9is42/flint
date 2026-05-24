@@ -128,7 +128,7 @@ export default async function AuditPage({ params }: PageProps) {
           width: '700px',
           height: '350px',
           background:
-            'radial-gradient(ellipse at 50% 0%, rgba(249,115,22,0.07) 0%, transparent 70%)',
+            'radial-gradient(ellipse at 50% 0%, rgba(190,100,255,0.07) 0%, transparent 70%)',
         }}
       />
 
@@ -137,7 +137,7 @@ export default async function AuditPage({ params }: PageProps) {
         <header className="mb-10">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316] focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 rounded"
+            className="inline-flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#be64ff] focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 rounded"
             aria-label="Flint — go to home page"
           >
             {/* Flint spark mark */}
@@ -152,17 +152,17 @@ export default async function AuditPage({ params }: PageProps) {
               <polygon
                 points="14,2 26,14 14,26 2,14"
                 fill="none"
-                stroke="#f97316"
+                stroke="#be64ff"
                 strokeWidth="2"
                 strokeLinejoin="round"
               />
               <polygon
                 points="14,7 21,14 14,21 7,14"
-                fill="#f97316"
+                fill="#be64ff"
                 opacity="0.7"
               />
             </svg>
-            <span className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[#f97316]">
+            <span className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[#be64ff]">
               Flint
             </span>
           </Link>
@@ -186,7 +186,7 @@ export default async function AuditPage({ params }: PageProps) {
             </p>
             <Link
               href="/"
-              className="text-xs text-neutral-600 underline underline-offset-4 transition-colors hover:text-[#f97316] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316] focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 rounded"
+              className="text-xs text-neutral-600 underline underline-offset-4 transition-colors hover:text-[#be64ff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#be64ff] focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 rounded"
             >
               Run your own audit →
             </Link>

@@ -334,7 +334,7 @@ export function SpendForm() {
           <Button
             type="button"
             onClick={handleStep1Continue}
-            className="h-11 px-8 bg-[var(--flint-amber)] text-black font-semibold hover:bg-orange-400 focus-visible:ring-[var(--flint-amber-glow)] transition-colors"
+            className="h-11 px-8 bg-[var(--flint-amber)] text-black font-semibold hover:bg-[#ca80ff] focus-visible:ring-[var(--flint-amber-glow)] transition-colors"
           >
             Continue →
           </Button>
@@ -420,7 +420,7 @@ export function SpendForm() {
               type="submit"
               disabled={auditState === 'submitting'}
               className={cn(
-                'h-11 min-w-[180px] bg-[var(--flint-amber)] font-semibold text-black transition-all hover:bg-orange-400 focus-visible:ring-[var(--flint-amber-glow)] disabled:opacity-60',
+                'h-11 min-w-[180px] bg-[var(--flint-amber)] font-semibold text-black transition-all hover:bg-[#ca80ff] focus-visible:ring-[var(--flint-amber-glow)] disabled:opacity-60',
               )}
             >
               {auditState === 'submitting' ? (

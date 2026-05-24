@@ -6,13 +6,13 @@
 
 /* ─── Flint Design Tokens ───────────────────────────────────────────────────── */
 :root {
-  --flint-amber: #f97316;
-  --flint-amber-dim: rgba(249, 115, 22, 0.15);
-  --flint-amber-glow: rgba(249, 115, 22, 0.3);
+  --flint-amber: #be64ff;
+  --flint-amber-dim: rgba(190, 100, 255, 0.15);
+  --flint-amber-glow: rgba(190, 100, 255, 0.3);
   --flint-surface: #111111;
   --flint-surface-raised: #1a1a1a;
   --flint-border: rgba(255, 255, 255, 0.08);
-  --flint-border-active: rgba(249, 115, 22, 0.5);
+  --flint-border-active: rgba(190, 100, 255, 0.5);
   --flint-text-dim: rgba(255, 255, 255, 0.45);
 }
 

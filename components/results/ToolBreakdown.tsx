@@ -32,7 +32,7 @@ const ACTION_META: Record<
 > = {
   downgrade: {
     label: 'Downgrade',
-    className: 'border-amber-500/30 bg-amber-500/10 text-amber-400',
+    className: 'border-[#be64ff]/30 bg-[#be64ff]/10 text-[#be64ff]',
   },
   upgrade: {
     label: 'Upgrade',
@@ -40,11 +40,11 @@ const ACTION_META: Record<
   },
   switch: {
     label: 'Switch tool',
-    className: 'border-amber-500/30 bg-amber-500/10 text-amber-400',
+    className: 'border-[#be64ff]/30 bg-[#be64ff]/10 text-[#be64ff]',
   },
   'use-credits': {
     label: 'Use credits',
-    className: 'border-amber-500/30 bg-amber-500/10 text-amber-400',
+    className: 'border-[#be64ff]/30 bg-[#be64ff]/10 text-[#be64ff]',
   },
   optimal: {
     label: 'Already optimal',
@@ -52,7 +52,7 @@ const ACTION_META: Record<
   },
   'review-usage': {
     label: 'Review usage',
-    className: 'border-orange-500/30 bg-orange-500/10 text-orange-400',
+    className: 'border-[#be64ff]/30 bg-[#be64ff]/10 text-[#be64ff]',
   },
 };
 
@@ -82,7 +82,7 @@ function ToolCard({ rec, index }: { rec: ToolRecommendation; index: number }) {
         'group relative overflow-hidden rounded-xl border transition-all duration-200',
         isOptimal
           ? 'border-white/8 bg-white/[0.02]'
-          : 'border-white/10 bg-white/[0.03] hover:border-[#f97316]/25 hover:bg-[#f97316]/[0.02]',
+          : 'border-white/10 bg-white/[0.03] hover:border-[#be64ff]/25 hover:bg-[#be64ff]/[0.02]',
       )}
       // Staggered entry animation via inline delay
       style={{ animationDelay: `${index * 60}ms` }}
@@ -147,7 +147,7 @@ function ToolCard({ rec, index }: { rec: ToolRecommendation; index: number }) {
                   />
                 </svg>
                 {/* Recommended spend */}
-                <span className="font-bold text-[#f97316]">
+                <span className="font-bold text-[#be64ff]">
                   {formatCurrency(rec.projectedMonthlySpend)}
                 </span>
               </>
@@ -158,7 +158,7 @@ function ToolCard({ rec, index }: { rec: ToolRecommendation; index: number }) {
           {/* Savings badge */}
           {hasSavings ? (
             <Badge
-              className="border-[#f97316]/30 bg-[#f97316]/10 font-mono text-[11px] font-bold text-[#f97316]"
+              className="border-[#be64ff]/30 bg-[#be64ff]/10 font-mono text-[11px] font-bold text-[#be64ff]"
               aria-label={`Save ${formatCurrency(rec.monthlySavings)} per month`}
             >
               −{formatCurrency(rec.monthlySavings)}/mo
@@ -177,7 +177,7 @@ function ToolCard({ rec, index }: { rec: ToolRecommendation; index: number }) {
       {/* Amber left-border accent for actionable items */}
       {!isOptimal && (
         <div
-          className="pointer-events-none absolute inset-y-0 left-0 w-[2px] bg-[#f97316]/40"
+          className="pointer-events-none absolute inset-y-0 left-0 w-[2px] bg-[#be64ff]/40"
           aria-hidden="true"
         />
       )}

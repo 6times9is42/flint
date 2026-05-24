@@ -48,7 +48,7 @@ export function ShareButton({ url }: ShareButtonProps) {
         onClick={handleCopy}
         variant="outline"
         className={cn(
-          'h-10 border-white/15 bg-white/[0.03] font-mono text-sm font-medium text-neutral-300 transition-all duration-200 hover:border-[#f97316]/40 hover:bg-[#f97316]/[0.05] hover:text-[#f97316]',
+          'h-10 border-white/15 bg-white/[0.03] font-mono text-sm font-medium text-neutral-300 transition-all duration-200 hover:border-[#be64ff]/40 hover:bg-[#be64ff]/[0.05] hover:text-[#be64ff]',
           copied && 'border-emerald-500/30 bg-emerald-500/5 text-emerald-400 hover:border-emerald-500/30 hover:bg-emerald-500/5 hover:text-emerald-400',
         )}
         aria-label={copied ? 'Link copied to clipboard' : 'Copy shareable audit link to clipboard'}

@@ -84,7 +84,7 @@ export function HeroSavings({
   // ── Savings hero ──────────────────────────────────────────────────────────
   return (
     <section
-      className="relative overflow-hidden rounded-2xl border border-[#f97316]/20 bg-[#f97316]/[0.04] px-8 py-10 sm:py-12"
+      className="relative overflow-hidden rounded-2xl border border-[#be64ff]/20 bg-[#be64ff]/[0.04] px-8 py-10 sm:py-12"
       aria-label={`Audit result: ${formatCurrency(totalMonthlySavings)} per month in potential savings found`}
     >
       {/* Amber glow */}
@@ -93,7 +93,7 @@ export function HeroSavings({
         aria-hidden="true"
         style={{
           background:
-            'radial-gradient(ellipse at 50% -10%, rgba(249,115,22,0.10) 0%, transparent 65%)',
+            'radial-gradient(ellipse at 50% -10%, rgba(190,100,255,0.10) 0%, transparent 65%)',
         }}
       />
 
@@ -101,10 +101,10 @@ export function HeroSavings({
         {/* Label */}
         <div className="flex items-center gap-2">
           <span
-            className="flex h-2 w-2 animate-pulse rounded-full bg-[#f97316]"
+            className="flex h-2 w-2 animate-pulse rounded-full bg-[#be64ff]"
             aria-hidden="true"
           />
-          <span className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#f97316]">
+          <span className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#be64ff]">
             Savings found
           </span>
         </div>
@@ -125,10 +125,10 @@ export function HeroSavings({
         {/* Annual callout */}
         <div className="pt-4">
           <p
-            className="inline-flex items-baseline gap-1.5 rounded-lg border border-[#f97316]/25 bg-[#f97316]/10 px-4 py-2"
+            className="inline-flex items-baseline gap-1.5 rounded-lg border border-[#be64ff]/25 bg-[#be64ff]/10 px-4 py-2"
             aria-label={`${formatCurrency(totalAnnualSavings)} per year in potential savings`}
           >
-            <span className="font-mono text-2xl font-bold text-[#f97316] sm:text-3xl">
+            <span className="font-mono text-2xl font-bold text-[#be64ff] sm:text-3xl">
               {formatCurrency(totalAnnualSavings)}
             </span>
             <span className="text-sm font-medium text-neutral-500">/ year</span>
